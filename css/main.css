@@ -1,0 +1,84 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    padding-block: 20px;
+    margin-bottom: 30px;
+    font-family: "Sevillana", cursive;
+    background-color: goldenrod; 
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+main{
+    margin: auto;
+    padding-inline: 20px;
+    width: 95% ; 
+
+    section{
+        .row{
+            padding-block: 20px;
+            .Card{
+                background-color: rgb(239, 235, 190);
+                text-align: center;
+                border-radius: 20px;
+                transition: 1.2s;
+                cursor: pointer;
+                margin-bottom: 40px;
+                margin-top:20px ;
+                border: 2px solid rgb(255, 202, 44);
+
+                .image{
+                    background-color: white;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 20px 20px 0px 0px;
+                    padding-top: 20px;
+                    img{
+                        width: 80%;
+                        height: 80%;
+                        border-radius: 20px 20px 0px 0px;
+                    }
+                }
+
+                .text{
+                    padding: 20px 10px;
+                    height: 420px;
+
+                    h2{
+                        color: rgb(14, 14, 111);
+                        margin-top: 15px;
+                        height: 80px;
+                        font-size: 17px;
+                    }
+
+                    .desc{
+                        height: 180px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 12px;
+                    }
+
+                    .price{
+                        color: green;
+                    }
+                }
+
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
